@@ -25,7 +25,6 @@ PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-hd-idle-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-alist-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-qbittorrent-zh-cn"
 
