@@ -123,21 +123,12 @@ jobs:
             sha256sum -c "$file.sha256"
           done
 
-      - name: Create GitHub Release Info
-        uses: softprops/action-gh-release@v2.1.0
+      - name: Upload ImmortWrt as release assets
+        uses: softprops/action-gh-release@v2.2.1
         with:
           tag_name: Autobuild
           name: ImmortWrt-Rockchip
           body_path: ${{ github.workspace }}/info.md
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload ImmortWrt as release assets
-        uses: softprops/action-gh-release@v2.1.0
-        with:
-          tag_name: Autobuild
           files: |
             ${{ github.workspace }}/*.img.gz
             ${{ github.workspace }}/*.sha256
